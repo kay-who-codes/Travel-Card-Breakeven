@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚌 Travel Card Breakeven</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <div id="header"></div>
+  <div class="container">
+    <h1>Travel Card Break Even Calculator</h1>
+    <p>Calculate how long it will take to break even on your travel card subscription.</p>
+    <div class="input-group">
+      <label for="subscription-price">Price of Travel Card (£):</label>
+      <input type="number" id="subscription-price" placeholder="Enter price of travel card">
+    </div>
+    <div class="input-group">
+      <label for="discount">Discount Applied to Tickets (%):</label>
+      <input type="number" id="discount" placeholder="Enter discount percentage" value="">
+    </div>
+    <div class="input-group">
+      <label for="transaction-price">Price of Ticket (£):</label>
+      <input type="number" id="transaction-price" placeholder="Enter average ticket price">
+    </div>
+    <div class="input-group">
+      <label for="transactions-frequency">Average Transactions Per Week/Month:</label>
+      <input type="text" id="transactions-frequency" placeholder="Enter frequency (eg: 5 pw or 20pm)">
+    </div>
+    <div class="output">
+      <h2>Results</h2>
+      <div class="results-section">
+        <h3>Savings</h3>
+        <p>Average saving per transaction: <span id="saving-per-transaction">£0.00</span></p>
+        <p>Average saving per week/month: <span id="saving-per-period">£0.00</span></p>
+        <p>Average saving per year: <span id="saving-per-year">£0.00</span></p>
+      </div>
+      <div class="results-section">
+        <h3>Breakeven</h3>
+        <p>You will break even after approximately <span id="break-even-transactions">0 transactions</span></p>
+        <p>You will break even in approximately <span id="break-even-time">0 weeks/months</span></p>
+      </div>
+      <div class="results-section">
+        <h3>Final Balance</h3>
+        <p>Final balance after 1 year: <span id="total-savings-year">£0.00</span></p>
+        <p>Final balance after 2 years: <span id="total-savings-two-years">£0.00</span></p>
+        <p>Final balance after 5 years: <span id="total-savings-five-years">£0.00</span></p>
+        <p>Final balance after 10 years: <span id="total-savings-ten-years">£0.00</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/header.js"></script>
+</body>
+</html>
